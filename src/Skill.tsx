@@ -2,45 +2,57 @@ import React from "react";
 import SkillCard from "./components/SkillCard";
 
 const skillItem = [
+  // Programming Languages
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
+    imgSrc: "/images/typescript.svg",
+    label: "TypeScript / JavaScript",
+    desc: "Programming languages",
+  },
+
+  // Frontend Development
+  {
+    imgSrc: "/images/react.svg",
+    label: "React JS",
+    desc: "JavaScript Library",
+  },
+  {
+    imgSrc: "/images/angular.svg",
+    label: "Angular",
+    desc: "Web framework",
+  },
+  {
+    imgSrc: "/images/ui-components.svg",
+    label: "DaisyUI/gluestack-ui",
+    desc: "UI component libraries",
   },
   {
     imgSrc: "/images/css3.svg",
     label: "CSS",
-    desc: "User Interface",
+    desc: "Styling language",
   },
-  {
-    imgSrc: "/images/javascript.svg",
-    label: "JavaScript",
-    desc: "Interaction",
-  },
+
+  // Backend Development
   {
     imgSrc: "/images/nodejs.svg",
     label: "NodeJS",
-    desc: "Web Server",
+    desc: "Runtime environment",
   },
   {
     imgSrc: "/images/expressjs.svg",
     label: "ExpressJS",
-    desc: "Node Framework",
+    desc: "Web application framework",
   },
+
+  // Databases and ORM
   {
     imgSrc: "/images/mongodb.svg",
-    label: "MongoDB",
+    label: "MongoDB / MySQL",
     desc: "Database",
   },
   {
-    imgSrc: "/images/react.svg",
-    label: "React",
-    desc: "Framework",
-  },
-  {
-    imgSrc: "/images/tailwindcss.svg",
-    label: "TailwindCSS",
-    desc: "User Interface",
+    imgSrc: "/images/prisma.svg",
+    label: "Prisma",
+    desc: "ORM (Object-Relational Mapping)",
   },
 ];
 
