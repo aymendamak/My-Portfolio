@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Work from "./components/Work";
-import Review from "./components/Review";
+// import Review from "./components/Review";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -20,7 +20,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function App() {
   useGSAP(() => {
-    const elements = gsap.utils.toArray(".reveal-up");
+    const elements = gsap.utils.toArray<HTMLElement>(".reveal-up");
 
     elements.forEach((element) => {
       gsap.to(element, {

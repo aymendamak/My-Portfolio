@@ -1,8 +1,6 @@
-import React from "react";
 import ReviewCard from "./ReviewCard";
 
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
 const reviews = [

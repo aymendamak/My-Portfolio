@@ -1,5 +1,3 @@
-import React from "react";
-
 const socialLinks = [
   {
     href: "https://github.com/aymendamak",

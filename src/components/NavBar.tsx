@@ -5,23 +5,24 @@ interface Props {
 }
 
 const NavBar = ({ navOpen }: Props) => {
-  const lastActiveLink = useRef();
-  const activeBox = useRef();
+  const activeBox = useRef<HTMLDivElement | null>(null);
+  const lastActiveLink = useRef<HTMLAnchorElement | null>(null);
 
   const initActiveBox = () => {
     if (activeBox && activeBox.current) {
-      activeBox.current.style.top = lastActiveLink.current.offsetTop + "px";
-      activeBox.current.style.left = lastActiveLink.current.offsetLeft + "px";
-      activeBox.current.style.width = lastActiveLink.current.offsetWidth + "px";
+      activeBox.current.style.top = lastActiveLink?.current?.offsetTop + "px";
+      activeBox.current.style.left = lastActiveLink?.current?.offsetLeft + "px";
+      activeBox.current.style.width =
+        lastActiveLink?.current?.offsetWidth + "px";
       activeBox.current.style.height =
-        lastActiveLink.current.offsetHeight + "px";
+        lastActiveLink?.current?.offsetHeight + "px";
     }
   };
 
   useEffect(initActiveBox, []);
   window.addEventListener("resize", initActiveBox);
 
-  const activeCurrentLink = (evet) => {
+  const activeCurrentLink = (event: any) => {
     lastActiveLink.current?.classList.remove("active");
     event.target.classList.add("active");
     lastActiveLink.current = event?.target;
