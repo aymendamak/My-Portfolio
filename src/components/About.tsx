@@ -2,12 +2,12 @@ import React from "react";
 
 const aboutItems = [
   {
-    label: "Project done",
-    number: 45,
+    label: "Personnel Project done",
+    number: 5,
   },
   {
     label: "Years of experience",
-    number: 10,
+    number: 4,
   },
 ];
 
@@ -15,13 +15,18 @@ const About = () => {
   return (
     <section id="about" className="section">
       <div className="container">
-        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 ">
-          <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
-            Welcome! I&apos;m Henry, a professional web developer with a knack
-            for crafting visually stunning and highly functional websites.
-            Combining creativity and technical expertise. I transform your
-            vision into digital masterpiece that excels in both appearance and
-            performance.
+        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
+          <p className="text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[80ch]">
+            Welcome! I&apos;m DAMAK Aymen, a seasoned full-stack web developer
+            with 4 years of experience in crafting robust and dynamic web
+            applications. My expertise lies in harnessing the power of Angular,
+            React.js, and Node.js to build seamless, user-centric digital
+            experiences. I am passionate about creating high-quality, scalable
+            solutions that not only meet business needs but also enhance user
+            satisfaction.
+            <br />
+            By leveraging TypeScript alongside JavaScript, I ensure that my code
+            is not only efficient but also maintainable and easy to understand.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 md:gap-7">

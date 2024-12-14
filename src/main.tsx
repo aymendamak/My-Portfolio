@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 import "material-symbols";
 import "./index.css";
+import "lenis/dist/lenis.css";
 
 import App from "./App.tsx";
 

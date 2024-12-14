@@ -54,7 +54,7 @@ const Footer = () => {
       <div className="container">
         <div className="lg:grid lg:grid-cols-2">
           <div className="mb-10">
-            <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
+            <h2 className="headline-1 mb-8 lg:max-w-[12ch] reveal-up">
               Let&apos;s work together today!
             </h2>
 
@@ -62,19 +62,20 @@ const Footer = () => {
               href="mailto:aymendamak2@gmail.com"
               label="Start Project"
               icon="chevron_right"
+              classes="reveal-up"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-4 lg:pl-20">
             <div>
-              <p className="mb-2">Sitemap</p>
+              <p className="mb-2 reveal-up">Sitemap</p>
               <ul>
                 {sitemap.map(({ label, href }, key) => (
                   <li key={key}>
                     <a
                       href={href}
                       className="block text-sm text-zinc-400 py-1 
-                      transition-colors hover:text-zinc-200"
+                      transition-colors hover:text-zinc-200 reveal-up"
                     >
                       {label}
                     </a>
@@ -84,14 +85,14 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="mb-2">Socials</p>
+              <p className="mb-2 reveal-up">Socials</p>
               <ul>
                 {socials.map(({ label, href }, key) => (
                   <li key={key}>
                     <a
                       href={href}
                       className="block text-sm text-zinc-400 py-1 
-                      transition-colors hover:text-zinc-200"
+                      transition-colors hover:text-zinc-200 reveal-up"
                       target="_blank"
                     >
                       {label}
@@ -103,7 +104,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex items-center justify-between pt-10 mb-8">
-          <a href="" className="">
+          <a href="/" className="logo reveal-up">
             <img
               src="/images/logo.svg"
               width={40}
@@ -113,7 +114,7 @@ const Footer = () => {
             />
           </a>
 
-          <p className="text-zinc-500 text-sm">
+          <p className="text-zinc-500 text-sm reveal-up">
             &copy; 2024{" "}
             <span className="text-zinc-200">Code With Aymen Damak</span>
           </p>
