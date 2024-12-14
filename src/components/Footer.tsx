@@ -15,10 +15,10 @@ const sitemap = [
     label: "Work",
     href: "#work",
   },
-  {
-    label: "Reviews",
-    href: "#reviews",
-  },
+  // {
+  //   label: "Reviews",
+  //   href: "#reviews",
+  // },
   {
     label: "Contact me",
     href: "#contact",
@@ -28,24 +28,24 @@ const sitemap = [
 const socials = [
   {
     label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://github.com/aymendamak",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
+    href: "https://www.linkedin.com/in/aymen-damak-2a5a2277/",
   },
-  {
-    label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
-  },
-  {
-    label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
-  },
-  {
-    label: "CodePen",
-    href: "https://codepen.io/codewithsadee",
-  },
+  // {
+  //   label: "Twitter X",
+  //   href: "https://x.com/codewithsadee_",
+  // },
+  // {
+  //   label: "Instagram",
+  //   href: "https://www.instagram.com/codewithsadee",
+  // },
+  // {
+  //   label: "CodePen",
+  //   href: "https://codepen.io/codewithsadee",
+  // },
 ];
 
 const Footer = () => {
@@ -103,7 +103,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center justify-between pt-10 mb-8">
+        {/* <div className="flex items-center justify-between pt-10 mb-8">
           <a href="/" className="logo reveal-up">
             <img
               src="/images/logo.svg"
@@ -118,7 +118,7 @@ const Footer = () => {
             &copy; 2024{" "}
             <span className="text-zinc-200">Code With Aymen Damak</span>
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
