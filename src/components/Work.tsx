@@ -2,10 +2,10 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-1.jpg",
-    title: "Full stack music app",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "https://musify-5al0.onrender.com/",
+    imgSrc: "/images/todo-app.png",
+    title: "To Do App",
+    tags: ["ReactJS", "Vite", "TypeScript", "TailWindCSS"],
+    projectLink: "https://todo-app-rho-opal-82.vercel.app/",
   },
   {
     imgSrc: "/images/project-2.jpg",
