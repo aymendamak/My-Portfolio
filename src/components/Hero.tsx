@@ -33,6 +33,47 @@ const Hero = () => {
               icon="arrow_downward"
             ></ButtonOutline>
           </div>
+          <div className="flex flex-col pt-6 gap-3">
+            <div className="flex flex-row">
+              <a
+                target="_blank"
+                className="w-10 h-10 grid place-items-center 
+             ring-inset ring-2 ring-zinc-50/50 rounded-lg 
+             hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/50"
+              >
+                <span className="material-symbols-rounded">mail</span>
+              </a>
+              <p className="m-2 md:text-lg md:max-w-[80ch]">
+                aymendamak2@gmail.com
+              </p>
+            </div>
+            <div className="flex flex-row">
+              <a
+                target="_blank"
+                className="w-10 h-10 grid place-items-center 
+             ring-inset ring-2 ring-zinc-50/50 rounded-lg 
+             hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/50"
+              >
+                <span className="material-symbols-rounded">phone</span>
+              </a>
+              <p className="m-2 md:text-lg md:max-w-[80ch]">
+                +33 06 19 49 68 67
+              </p>
+            </div>
+            <div className="flex flex-row">
+              <a
+                target="_blank"
+                className="w-10 h-10 grid place-items-center 
+             ring-inset ring-2 ring-zinc-50/50 rounded-lg 
+             hover:bg-zinc-50 hover:text-zinc-950 active:bg-zinc-50/50"
+              >
+                <span className="material-symbols-rounded">location_on</span>
+              </a>
+              <p className="m-2 md:text-lg md:max-w-[80ch]">
+                Marseille, France
+              </p>
+            </div>
+          </div>
         </div>
         <div className="hidden lg:block">
           <figure
