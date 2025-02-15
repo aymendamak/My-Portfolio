@@ -4,6 +4,7 @@ interface Props {
   label?: string;
   icon?: string;
   classes?: string;
+  onClick?: () => void;
 }
 
 const ButtonPrimary = ({
@@ -12,6 +13,7 @@ const ButtonPrimary = ({
   label,
   icon,
   classes,
+  onClick,
 }: Props) => {
   if (href) {
     return (
@@ -26,7 +28,7 @@ const ButtonPrimary = ({
     );
   } else {
     return (
-      <button className={"btn btn-primary " + classes}>
+      <button className={"btn btn-primary " + classes} onClick={onClick}>
         {label}
         {icon ? (
           <span className="material-symbols-rounded" aria-hidden="true">
