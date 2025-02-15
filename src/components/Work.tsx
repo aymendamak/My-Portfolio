@@ -7,6 +7,33 @@ const works = [
     tags: ["ReactJS", "Vite", "TypeScript", "TailWindCSS"],
     projectLink: "https://todo-app-rho-opal-82.vercel.app/",
   },
+  {
+    imgSrc: "/images/book-library-home.png",
+    title: "Book Library",
+    tags: [
+      "Angular 19",
+      "NodeJs / Express Js",
+      "TypeScript",
+      "TailWindCSS",
+      "DaisyUI",
+      "JWT",
+      "Prisma ORM",
+    ],
+    projectLink: "https://github.com/aymendamak/books-api",
+  },
+  {
+    imgSrc: "/images/students-list.png",
+    title: "Students List",
+    tags: [
+      "React JS",
+      "NodeJs / Express Js",
+      "TypeScript",
+      "TailWindCSS",
+      "DaisyUI",
+      "Prisma ORM",
+    ],
+    projectLink: "https://github.com/aymendamak/students-crud",
+  },
 ];
 
 const Work = () => {
