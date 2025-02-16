@@ -18,6 +18,7 @@ const works = [
       "DaisyUI",
       "JWT",
       "Prisma ORM",
+      "Jest",
     ],
     projectLink: "https://github.com/aymendamak/books-api",
   },
