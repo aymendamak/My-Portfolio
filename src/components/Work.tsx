@@ -5,7 +5,7 @@ const works = [
     imgSrc: "/images/todo-app.png",
     title: "To Do App",
     tags: ["ReactJS", "Vite", "TypeScript", "TailWindCSS"],
-    projectLink: "https://todo-app-rho-opal-82.vercel.app/",
+    projectLink: ["https://todo-app-rho-opal-82.vercel.app/"],
   },
   {
     imgSrc: "/images/book-library-home.png",
@@ -20,7 +20,10 @@ const works = [
       "Prisma ORM",
       "Jest",
     ],
-    projectLink: "https://github.com/aymendamak/books-api",
+    projectLink: [
+      "https://github.com/aymendamak/books-api",
+      "https://github.com/aymendamak/books-cs",
+    ],
   },
   {
     imgSrc: "/images/students-list.png",
@@ -33,7 +36,7 @@ const works = [
       "DaisyUI",
       "Prisma ORM",
     ],
-    projectLink: "https://github.com/aymendamak/students-crud",
+    projectLink: ["https://github.com/aymendamak/students-crud"],
   },
 ];
 

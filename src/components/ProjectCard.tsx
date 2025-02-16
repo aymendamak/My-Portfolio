@@ -2,7 +2,7 @@ interface Props {
   imgSrc: string;
   tags: string[];
   title: string;
-  projectLink: string;
+  projectLink: string[];
   classes?: string;
 }
 
@@ -35,18 +35,23 @@ const ProjectCard = ({ imgSrc, tags, title, projectLink, classes }: Props) => {
             ))}
           </div>
         </div>
-
-        <div
-          className="w11 h-11 rounded-lg grid place-items-center 
-        bg-sky-400 text-zinc-950 shrink-0"
-        >
-          <span className="material-symbols-rounded" aria-hidden="true">
-            arrow_outward
-          </span>
-        </div>
       </div>
 
-      <a href={projectLink} target="_blank" className="absolute inset-0"></a>
+      <div className="flex gap-2 pt-4">
+        {projectLink.map((link, index) => (
+          <a
+            key={index}
+            href={link}
+            target="_blank"
+            className="w-11 h-11 rounded-lg grid place-items-center 
+                bg-sky-400 text-zinc-950 shrink-0 hover:bg-sky-500 transition-colors"
+          >
+            <span className="material-symbols-outlined">
+              {index === 1 ? "storefront" : "dns"}
+            </span>
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
