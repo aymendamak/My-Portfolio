@@ -21,8 +21,8 @@ const works = [
       "Jest",
     ],
     projectLink: [
-      "https://github.com/aymendamak/books-api",
       "https://github.com/aymendamak/books-cs",
+      "https://github.com/aymendamak/books-api",
     ],
   },
   {
@@ -37,6 +37,12 @@ const works = [
       "Prisma ORM",
     ],
     projectLink: ["https://github.com/aymendamak/students-crud"],
+  },
+  {
+    imgSrc: "/images/real-estate-mobile-app.jpg",
+    title: "Real Estate Mobile App",
+    tags: ["React Native", "TypeScript", "TailWindCSS", "NativeWind", "Expo"],
+    projectLink: ["https://github.com/aymendamak/real-estate-mobile-cs"],
   },
 ];
 

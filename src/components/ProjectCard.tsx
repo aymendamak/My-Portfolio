@@ -47,7 +47,7 @@ const ProjectCard = ({ imgSrc, tags, title, projectLink, classes }: Props) => {
                 bg-sky-400 text-zinc-950 shrink-0 hover:bg-sky-500 transition-colors"
           >
             <span className="material-symbols-outlined">
-              {index === 1 ? "storefront" : "dns"}
+              {index === 0 ? "storefront" : "dns"}
             </span>
           </a>
         ))}
