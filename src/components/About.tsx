@@ -42,11 +42,11 @@ const About = () => {
             ))}
 
             <img
-              src="/images/logo.svg"
+              src="/images/FWD-logo-removedbg.png"
               alt="Logo"
-              width={30}
-              height={30}
-              className="ml-auto md:w-[40px] md:h-[40px]"
+              width={60}
+              height={60}
+              className="ml-auto md:w-[60px] md:h-[60px]"
             />
           </div>
         </div>

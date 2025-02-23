@@ -41,7 +41,7 @@ const Hero = () => {
               icon="arrow_downward"
             ></ButtonOutline>
           </div>
-          <div className="flex flex-col pt-6 gap-3">
+          <div className="flex flex-col pt-8 gap-3">
             <div className="flex flex-row">
               <a
                 target="_blank"
