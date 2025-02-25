@@ -2,7 +2,7 @@ import { ButtonOutline, ButtonPrimary } from "./Button";
 
 const Hero = () => {
   const handleDownloadCV = () => {
-    const cvPath = "../../public/CV/DAMAK_AYMEN_EN.pdf";
+    const cvPath = "/CV/DAMAK_AYMEN_EN.pdf";
 
     const link = document.createElement("a");
     link.href = cvPath;
