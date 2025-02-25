@@ -1,143 +1,85 @@
 import SkillCard from "./components/SkillCard";
 
-const skillItem = [
-  // Programming Languages
+type Skill = {
+  category: string;
+  imgSrc: string;
+  label: string;
+};
+
+const skills: Skill[] = [
   {
+    category: "Programming Languages",
     imgSrc: "/images/javascript.svg",
     label: "JavaScript",
-    desc: "Programming languages",
   },
   {
+    category: "Programming Languages",
     imgSrc: "/images/typescript.svg",
     label: "TypeScript",
-    desc: "Programming languages",
   },
-
-  // Frontend Development
+  { category: "Frontend", imgSrc: "/images/react.svg", label: "React" },
+  { category: "Frontend", imgSrc: "/images/angular.svg", label: "Angular" },
   {
-    imgSrc: "/images/react.svg",
-    label: "React JS",
-    desc: "JavaScript Library",
-  },
-  {
-    imgSrc: "/images/angular.svg",
-    label: "Angular",
-    desc: "Web framework",
-  },
-  // {
-  //   imgSrc: "/images/ui-components.svg",
-  //   label: "DaisyUI/gluestack-ui",
-  //   desc: "UI component libraries",
-  // },
-  {
+    category: "Frontend",
     imgSrc: "/images/tailwindcss.svg",
     label: "Tailwind CSS",
-    desc: "Utility-first CSS framework for rapid UI development",
   },
-
-  // Backend Development
+  { category: "Backend", imgSrc: "/images/nodejs.svg", label: "Node.js" },
+  { category: "Backend", imgSrc: "/images/expressjs.svg", label: "Express.js" },
+  { category: "Databases", imgSrc: "/images/sql.svg", label: "SQL" },
   {
-    imgSrc: "/images/nodejs.svg",
-    label: "NodeJS",
-    desc: "Runtime environment",
-  },
-  {
-    imgSrc: "/images/expressjs.svg",
-    label: "ExpressJS",
-    desc: "Web application framework",
-  },
-
-  // Databases and ORM
-  {
-    imgSrc: "/images/sql.svg",
-    label: "SQL",
-    desc: "Structured Query Language for managing databases",
-  },
-  {
+    category: "Databases",
     imgSrc: "/images/mySQL.svg",
     label: "MongoDB / MySQL",
-    desc: "SGBD",
+  },
+  { category: "Databases", imgSrc: "/images/prisma.svg", label: "Prisma" },
+  { category: "Tools", imgSrc: "/images/postman.svg", label: "Postman" },
+  { category: "Tools", imgSrc: "/images/git.svg", label: "Git" },
+  { category: "Tools", imgSrc: "/images/jenkins-logo.png", label: "Jenkins" },
+  { category: "Testing", imgSrc: "/images/jest.svg", label: "Jest" },
+  {
+    category: "Security",
+    imgSrc: "/images/owasp-logo.png ",
+    label: "OWASP Security",
   },
   {
-    imgSrc: "/images/prisma.svg",
-    label: "Prisma",
-    desc: "ORM (Object-Relational Mapping)",
-  },
-
-  // DevOps and Tools
-  // {
-  //   imgSrc: "/images/docker.svg",
-  //   label: "Docker",
-  //   desc: "Containerization platform",
-  // },
-  {
-    imgSrc: "/images/postman.svg",
-    label: "Postman",
-    desc: "API development and testing",
-  },
-  {
-    imgSrc: "/images/git.svg",
-    label: "Git",
-    desc: "Version control and collaboration",
-  },
-
-  // Testing
-  {
-    imgSrc: "/images/jest.svg",
-    label: "Jest",
-    desc: "JavaScript testing framework",
-  },
-
-  // State Management
-  // {
-  //   imgSrc: "/images/redux.svg",
-  //   label: "Redux",
-  //   desc: "State management library",
-  // },
-
-  // Cloud Services
-  // {
-  //   imgSrc: "/images/aws.svg",
-  //   label: "AWS",
-  //   desc: "Cloud computing platform",
-  // },
-
-  // Security
-  {
-    imgSrc: "/images/owasp.svg",
-    label: "OWASP Security Practices",
-    desc: "Web application security",
-  },
-
-  // Development Tools
-  {
+    category: "Development Tools",
     imgSrc: "/images/vs-code.svg",
-    label: "Visual Studio Code",
-    desc: "Powerful code editor for web development",
+    label: "VS Code",
   },
 ];
+
+const groupedSkills = skills.reduce((acc, skill) => {
+  acc[skill.category] = acc[skill.category] || [];
+  acc[skill.category].push(skill);
+  return acc;
+}, {} as Record<string, Skill[]>);
 
 const Skill = () => {
   return (
     <section className="section" id="skills">
-      <div className="container">
-        <h2 className="headline-2 reveal-up">Essential Tools I use</h2>
-        <p className="text-zinc-400 mt-3 mb-8 max-w-[50ch]">
-          Discover the powerful tools and technologies I use to create
-          exceptional, high-performing websites & applications.
+      <div className="container text-center reveal-up">
+        <h2 className="headline-2">Essential Tools I Use</h2>
+        <p className="text-zinc-400 mt-3 mb-6 max-w-[50ch] mx-auto">
+          The key technologies and tools that help me build high-performance
+          applications.
         </p>
-        <div
-          className="grid gap-3 
-        grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]"
-        >
-          {skillItem.map(({ imgSrc, label, desc }, key) => (
-            <SkillCard
-              key={key}
-              imgSrc={imgSrc}
-              label={label}
-              desc={desc}
-              classes="reveal-up"
-            ></SkillCard>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-6">
+          {Object.entries(groupedSkills).map(([category, skills]) => (
+            <div
+              key={category}
+              className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-700/50 shadow-sm hover:shadow-md transition-all reveal-up"
+            >
+              <h3 className="text-sm font-semibold text-zinc-300 mb-3 uppercase tracking-wide">
+                {category}
+              </h3>
+              <div className="grid grid-cols-2 gap-3">
+                {skills.map(({ imgSrc, label }, key) => (
+                  <SkillCard key={key} imgSrc={imgSrc} label={label} />
+                ))}
+              </div>
+            </div>
           ))}
         </div>
       </div>
